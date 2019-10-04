@@ -19,8 +19,8 @@ class Caro extends React.Component<CaroProps, CaroState> {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
-                        alt="First slide"
+                        src="https://i.pinimg.com/originals/47/dc/31/47dc31e4f8efd48f8b7451859b92e0cc.jpg"
+                        alt="Roll"
                     />
                     <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -30,7 +30,7 @@ class Caro extends React.Component<CaroProps, CaroState> {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        src="https://i.ytimg.com/vi/NvfBYrvrh9g/maxresdefault.jpg"
                         alt="second slide"
                     />
 
@@ -42,7 +42,7 @@ class Caro extends React.Component<CaroProps, CaroState> {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        src="https://i.pinimg.com/originals/f4/ce/4c/f4ce4c735e5a53044fc9a408a09c5e4e.jpg"
                         alt="Third slide"
                     />
 

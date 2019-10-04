@@ -33,7 +33,6 @@ class Navigate extends React.Component<NavigateProps, NavigateState> {
                     <Button variant="outline-info">Search</Button>
                 </Form> */}
             </Navbar>
-            <br />
         </div>);
     }
 }
