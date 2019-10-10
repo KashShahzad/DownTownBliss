@@ -2,8 +2,8 @@ import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
+// import Form from 'react-bootstrap/Form';
+// import FormControl from 'react-bootstrap/FormControl';
 
 export interface NavigateProps {
 
@@ -25,8 +25,9 @@ class Navigate extends React.Component<NavigateProps, NavigateState> {
                     <Nav.Link href="#pricing">Catering</Nav.Link>
                     <Nav.Link href="#pricing">Deals & Rewards</Nav.Link>
                     <Nav.Link href="#pricing">Locate Us</Nav.Link>
+                    <Nav.Link href="#pricing">Login</Nav.Link>
                 </Nav>
-                <Nav.Link inline href="#pricing">Login</Nav.Link>
+
                 <Button variant="outline-info">Search</Button>
                 {/* <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
