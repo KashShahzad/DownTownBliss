@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { directive } from '@babel/types';
+// import { directive } from '@babel/types';
 export interface SMediaProps {
 
 }
