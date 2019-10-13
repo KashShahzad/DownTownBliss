@@ -14,7 +14,7 @@ export interface CaroState {
 
 const Styles = styled.div`
     .carousel{
-    
+      
     }
     .carImg {
         height: 480px

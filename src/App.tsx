@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Car from "./components/Carousel";
 import Foot from "./components/Footer"
 import DetailPan from "./components/Detail";
-import Services from "./components/Service";
+import ServiceLay from './components/ServiceLayout'
 import SMedia from "./components/SM";
 
 const App: React.FC = () => {
@@ -13,7 +13,7 @@ const App: React.FC = () => {
     <React.Fragment>
       <Navigate />
       <Car />
-      <Services />
+      <ServiceLay />
       <SMedia />
       <DetailPan />
       <Foot />

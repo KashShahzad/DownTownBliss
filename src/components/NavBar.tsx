@@ -17,7 +17,8 @@ export interface NavigateState {
 
 const Styles = styled.div`
  .navi {
-     height 90px
+     height: 90px;
+     width:100%;
  }
  .brand{
      text-size: 500px
@@ -40,7 +41,7 @@ class Navigate extends React.Component<NavigateProps, NavigateState> {
                         <Nav.Link href="#pricing">Login</Nav.Link>
                     </Nav>
 
-                    <Button variant="outline-info">Search</Button>
+                    <Button variant="outline-info">OrderNow</Button>
                     {/* <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                     <Button variant="outline-info">Search</Button>
