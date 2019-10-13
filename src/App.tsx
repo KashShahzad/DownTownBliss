@@ -9,14 +9,15 @@ import Services from "./components/Service";
 import SMedia from "./components/SM";
 
 const App: React.FC = () => {
-  return <div className="App">
-    <Navigate />
-    <Car />
-    <Services />
-    <SMedia />
-    <DetailPan />
-    <Foot />
-  </div>;
+  return (
+    <React.Fragment>
+      <Navigate />
+      <Car />
+      <Services />
+      <SMedia />
+      <DetailPan />
+      <Foot />
+    </React.Fragment>);
 };
 
 export default App;
