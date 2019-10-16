@@ -3,6 +3,9 @@ import * as React from 'react';
 // import { directive } from '@babel/types';
 import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
+import bo from '../images/c1.jpeg';
+import ba from '../images/c2.jpg';
+import be from '../images/c3.jpg';
 
 export interface CaroProps {
 
@@ -13,58 +16,69 @@ export interface CaroState {
 }
 
 const Styles = styled.div`
+.rea{
+    background-color:rgb(28, 28, 28);
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+}
     .carousel{
-      
+      padding-left:30px;
+      padding-right:30px;
+      position: relative;
+      z-index: auto;
     }
+      
     .carImg {
-        height: 480px
+        height: 600px;  
     }
 `;
 
 class Caro extends React.Component<CaroProps, CaroState> {
     state = {}
     render() {
-        return (<div>
-            <Styles>
-                <Carousel className="carousel" >
-                    <Carousel.Item >
-                        <img
-                            className="d-block w-100 carImg"
-                            src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Roll"
-                        />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item >
-                        <img
-                            className="d-block w-100 carImg"
-                            src="https://images.pexels.com/photos/718742/pexels-photo-718742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="second slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item >
-                        <img
-                            className="d-block w-100 carImg"
-                            src="https://images.pexels.com/photos/156114/pexels-photo-156114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </Styles>
-        </div>);
+        return (
+            <React.Fragment>
+                <Styles>
+                    <div className="rea">
+                        <Carousel className="carousel" >
+                            <Carousel.Item >
+                                <img
+                                    className="d-block w-100 carImg"
+                                    src={bo}
+                                    alt="Roll"
+                                />
+                                <Carousel.Caption>
+                                    <h3>First slide label</h3>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item >
+                                <img
+                                    className="d-block w-100 carImg"
+                                    src={ba}
+                                    alt="second slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3>Second slide label</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item >
+                                <img
+                                    className="d-block w-100 carImg"
+                                    src={be}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3>Third slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </div>
+                </Styles>
+            </React.Fragment>);
     }
 }
 

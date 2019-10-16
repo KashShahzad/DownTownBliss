@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from "styled-components";
+import bb from '../images/bbb.jpg'
 
 export interface FoodNutritionProps {
 
@@ -11,8 +12,11 @@ export interface FoodNutritionState {
 
 const Styles = styled.div`
 .divi{
-    height: 350px;
-    background-color: brown;
+    height: 600px;
+    background: url(${bb});
+    background-size: cover;
+    background-padding-top: 186
+    background-size: cover;
 }
 `;
 
@@ -23,7 +27,6 @@ class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionSta
             <Styles>
                 <React.Fragment>
                     <div className="divi">
-                        food blockchain
                     </div>
                 </React.Fragment>
             </Styles>);

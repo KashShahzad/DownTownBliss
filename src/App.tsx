@@ -10,21 +10,33 @@ import Culture from "./components/Culture";
 import DelBook from "./components/D&B";
 import FoodInvest from "./components/FoodInvest";
 import FoodNutrition from "./components/FoodNutrition";
+import styled from "styled-components";
 
+const Styles = styled.div`
+.div1{
+  background-color: black;
+  width:100%;
+  height: 10px;
+}
+`;
 
 const App: React.FC = () => {
   return (
-    <React.Fragment>
-      <Navigate />
-      <Car />
-      <ServiceLay />
-      <FoodNutrition />
-      <FoodInvest />
-      <Culture />
-      <SMedia />
-      <DelBook />
-      <Foot />
-    </React.Fragment>);
+    <Styles>
+      <React.Fragment>
+        <Navigate />
+        <Car />
+        <div className="div1"></div>
+        <ServiceLay />
+        <FoodNutrition />
+        <FoodInvest />
+        <Culture />
+        <SMedia />
+        <DelBook />
+        <Foot />
+      </React.Fragment>
+    </Styles>);
+
 };
 
 export default App;
