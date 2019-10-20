@@ -15,7 +15,7 @@ export interface SMediaState {
 const Styles = styled.div`
 
 .jumbo{
-    height: 250px;
+    height: 400px;
     background-color: silver;
     width: 100%;
     margin:0px;
@@ -35,8 +35,10 @@ class SMedia extends React.Component<SMediaProps, SMediaState> {
                     <Jumbotron className="jumbo">
 
                         <Container className="con">
-                            <h1>SocialMediaPosts</h1>
-                            <p>thsdis it sthsi fjgfghdsjf sfjkhres gjdfkfgr gjdskhge</p>
+                            <span>So Meal is fresh, healthy and delicious</span>
+                            <p>FIND US or let us to FIND YOU</p>
+                            <span>Or you can be hustle free by becoming our</span>
+                            <p>Hero</p>
                         </Container>
 
                     </Jumbotron>

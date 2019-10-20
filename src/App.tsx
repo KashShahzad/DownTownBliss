@@ -7,7 +7,6 @@ import Foot from "./components/DetailedFooter"
 // import ServiceLay from './components/ServiceLayout'
 import SMedia from "./components/SM";
 import Culture from "./components/Culture";
-import DelBook from "./components/D&B";
 import FoodNutrition from "./components/FoodNutrition";
 import styled from "styled-components";
 
@@ -30,7 +29,6 @@ const App: React.FC = () => {
         <FoodNutrition />
         <Culture />
         <SMedia />
-        <DelBook />
         <Foot />
       </React.Fragment>
     </Styles>);

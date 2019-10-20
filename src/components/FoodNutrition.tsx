@@ -1,12 +1,13 @@
 import * as React from 'react';
 import styled from "styled-components";
-import bb from '../images/nutr.jpeg'
-import nn from '../images/bcf.jpeg'
-import abc from '../images/abc1a.jpg'
-import abcc from '../images/abc1b.jpg'
-import abccc from '../images/abc1c.jpg'
-import aacc from '../images/abc2a.jpg'
-import aaccc from '../images/abc2b.jpg'
+import bb from '../images/nutr.jpeg';
+import nn from '../images/bcf.jpeg';
+import abc from '../images/abc1a.jpg';
+import abcc from '../images/abc1b.jpg';
+import abccc from '../images/abc1c.jpg';
+import aacc from '../images/abc2a.jpg';
+import aaccc from '../images/abc2b.jpg';
+import bbb from '../images/bbb.jpg';
 import { Jumbotron, Container, Row } from 'react-bootstrap';
 
 export interface FoodNutritionProps {
@@ -19,7 +20,7 @@ export interface FoodNutritionState {
 
 const Styles = styled.div`
 .divi{
-    height: 2100px;
+    height: 2380px;
     width: 100%;
     // background: url(${bb});
     // opacity: 0.9;
@@ -61,7 +62,7 @@ const Styles = styled.div`
  }
 .abc{
     background-color: black;
-    height: 1050px;
+    height: 1320px;
     
     position: relative;
     z-index: -1;
@@ -70,10 +71,15 @@ const Styles = styled.div`
     padding: 30px;
 }
 .abc1{
-    height:400px;
+    height:300px;
+    margin-bottom: 30px;
 }
 .abc2{
     height:560px;
+    margin-bottom: 30px;
+}
+.abc3{
+    height:300px;
 }
 .cd{
     background-color: rgb(28, 28, 28);
@@ -106,29 +112,47 @@ const Styles = styled.div`
      height: 300px;
      padding:0;
      margin: 0;
-     padding-right: 10px;
+     padding-right: 30px;
 
  }
  .rab1{
-     width: 620px;
+     width: 650px;
      object-fit: cover;
-     height: 350px;
-     padding-right: 10px;
+     height: 300px;
+     padding-right: 30px;
  }
  .rab2{
-     width: 250px;
-     height: 400px;
+     width: 220px;
+     height: 300px;
  }
 .rabb{
     object-fit: cover;
-    width: 520px;
+    width: 540px;
     height: 600px;
-    margin: 10px;
-    padding-top: 10px;
-    padding-bottom: 30px
+    padding-right: 15px;
+}
+.rabbb{
+    object-fit: cover;
+    width: 540px;
+    height: 600px;
+    padding-left: 15px;
+}
+.pc{
+    margin-top: 40px;
+    object-fit: cover;
+    width: 220px;
+    height: 300px;
+    position: absolute-1;
+    float: right;
+}
+.jumbo{
+    margin-top: 40px;
+    width: 830px;
+    height: 300px;
+    position: absolute;
+    background-color: brown;
 }
 }
-
 `;
 
 class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionState> {
@@ -172,8 +196,18 @@ class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionSta
                                     alt="Roll"
                                 />
                                 <img
-                                    className="rabb"
+                                    className="rabbb"
                                     src={aaccc}
+                                    alt="Roll"
+                                />
+                            </div>
+                            <div className="abc3">
+                                <div className="jumbo">
+
+                                </div>
+                                <img
+                                    className="pc"
+                                    src={bbb}
                                     alt="Roll"
                                 />
                             </div>
