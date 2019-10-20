@@ -23,15 +23,24 @@ const Styles = styled.div`
     overflow: visible;
 }
     .carousel{
-      padding-left:30px;
-      padding-right:30px;
+      padding-left:40px;
+      padding-right:40px;
       position: relative;
       z-index: auto;
+
     }
       
     .carImg {
         height: 600px;  
     }
+    // .carousel-control-prev {
+    //     margin-left: -80px;
+    //   }
+      
+    //   .carousel-control-next {
+    //     margin-right: -80px;
+    //   }
+
 `;
 
 class Caro extends React.Component<CaroProps, CaroState> {

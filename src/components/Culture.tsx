@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from "styled-components";
+import { Container } from 'react-bootstrap';
 
 export interface CultureProps {
 
@@ -12,8 +13,17 @@ export interface CultureState {
 const Styles = styled.div`
 
 .divi{
-    height: 250px;
-    background-color: yellow;
+    height: 600px;
+    background-color: black;
+}
+.abc{
+    height:500px;
+    padding-top:50px;
+    background-color: rgb(28,28,28);
+    position: relative;
+}
+.div{
+
 }
 
 `;
@@ -24,7 +34,9 @@ class Culture extends React.Component<CultureProps, CultureState> {
         return (<Styles>
             <React.Fragment>
                 <div className="divi">
-                    this will show culture of restaurant
+                    <Container className="abc">
+
+                    </Container>
                 </div>
             </React.Fragment>
         </Styles>);

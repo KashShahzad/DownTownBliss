@@ -4,11 +4,10 @@ import Navigate from "./components/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Car from "./components/Carousel";
 import Foot from "./components/DetailedFooter"
-import ServiceLay from './components/ServiceLayout'
+// import ServiceLay from './components/ServiceLayout'
 import SMedia from "./components/SM";
 import Culture from "./components/Culture";
 import DelBook from "./components/D&B";
-import FoodInvest from "./components/FoodInvest";
 import FoodNutrition from "./components/FoodNutrition";
 import styled from "styled-components";
 
@@ -16,7 +15,7 @@ const Styles = styled.div`
 .div1{
   background-color: black;
   width:100%;
-  height: 10px;
+  height: 20px;
 }
 `;
 
@@ -27,9 +26,8 @@ const App: React.FC = () => {
         <Navigate />
         <Car />
         <div className="div1"></div>
-        <ServiceLay />
+        {/* <ServiceLay /> */}
         <FoodNutrition />
-        <FoodInvest />
         <Culture />
         <SMedia />
         <DelBook />

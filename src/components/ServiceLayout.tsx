@@ -14,7 +14,7 @@ export interface ServiceLayState {
 const Styles = styled.div`
 
  .jumbo{
-    height: 300px;
+    height: 400px;
     margin:0;
     background: url(${p1}) no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ const Styles = styled.div`
     opacity: 0.6;
  }
  .jumbo1{
-    height: 300px;
+    height: 400px;
     margin:0;
     background: url(${p1}) no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@ const Styles = styled.div`
     opacity: 0.6;
  }
  .jumbo2{
-    height: 300px;
+    height: 400px;
     margin:0;
     background: url(${p1}) no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@ const Styles = styled.div`
     opacity: 0.6;
  }
  .jumbo3{
-    height: 300px;
+    height: 400px;
     margin:0;
     background: url(${p1}) no-repeat;
     background-size: cover;
@@ -62,19 +62,22 @@ const Styles = styled.div`
  }
 
  .abc{
-   padding-left:0;
-   padding-right:0;
+   padding-right:0px;
+   padding-left:0px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  .ab{
-    padding-right:0;
-    padding-left:0;
+    padding-left:0px;
+    padding-right:0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
 
  .cd{
-     margin:0;
+     margin:0px;
  }
+ 
  .devi{
-     background-color:black;
+     background-color:rgb(28, 28, 28);
      position: relative;
      z-index: -3;
  }
