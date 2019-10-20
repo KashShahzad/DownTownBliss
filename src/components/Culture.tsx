@@ -18,9 +18,12 @@ const Styles = styled.div`
 }
 .abc{
     height:500px;
-    padding-top:50px;
+    left: 4%;
+    right: 5%;
+    margin: 50px;
     background-color: rgb(28,28,28);
-    position: relative;
+    position: absolute;
+  
 }
 .div{
 
