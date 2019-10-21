@@ -62,8 +62,7 @@ const Styles = styled.div`
  }
 .abc{
     background-color: black;
-    height: 1320px;
-    
+    height: 1320px;   
     position: relative;
     z-index: -1;
     margin-top: -30px;
@@ -113,7 +112,6 @@ const Styles = styled.div`
      padding:0;
      margin: 0;
      padding-right: 30px;
-
  }
  .rab1{
      width: 650px;
@@ -151,7 +149,6 @@ const Styles = styled.div`
     height: 300px;
     position: absolute;
     background-color: brown;
-}
 }
 `;
 

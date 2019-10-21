@@ -53,6 +53,10 @@ const Styles = styled.div`
     float:right;
 }
 
+#a:hover{
+    color: blue;
+}
+
 `;
 
 class Navigate extends React.Component<NavigateProps, NavigateState> {
@@ -65,7 +69,7 @@ class Navigate extends React.Component<NavigateProps, NavigateState> {
                     <Navbar.Toggle area-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="aauto">
-                            <Nav.Link style={{ padding: "20px", color: "white" }} href="#home">Bliss Theory</Nav.Link>
+                            <Nav.Link id="a" style={{ padding: "20px", color: "white" }} href="#home">Bliss Theory</Nav.Link>
                             <Nav.Link style={{ padding: "20px", color: "white" }} href="#home">About Us</Nav.Link>
                             <Nav.Link style={{ padding: "20px", color: "white" }} href="#features">Our Menu</Nav.Link>
                             <Nav.Link style={{ padding: "20px", color: "white" }} href="#pricing">Catering</Nav.Link>

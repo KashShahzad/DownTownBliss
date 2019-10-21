@@ -12,9 +12,9 @@ import styled from "styled-components";
 
 const Styles = styled.div`
 .div1{
-  background-color: black;
+  background-color: silver;
   width:100%;
-  height: 20px;
+  height: 300px;
 }
 `;
 
