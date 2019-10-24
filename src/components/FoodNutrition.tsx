@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from "styled-components";
 import bb from '../images/nutr.jpeg';
-import nn from '../images/bcf.jpeg';
+import nn from '../images/bcf.jpg';
 import abc from '../images/abc1a.jpg';
 import abcc from '../images/abc1b.jpg';
 import abccc from '../images/abc1c.jpg';
@@ -28,11 +28,10 @@ const Styles = styled.div`
     // bakground-position: 100% 0;
     // background-padding-top: 186;
     // background-size: cover;
-    background-color: rgb(28, 28, 28, 0.8);
+    background-color: rgb(28, 28, 28);
     position: relative;
     z-index: -3;
 }
-
 .ab{
     height: 525px;
     position: relative;
@@ -44,7 +43,7 @@ const Styles = styled.div`
     background: url(${bb}) no-repeat top;
     opacity: 0.8;
     background-size: cover;
-}
+ }
 .overlay{
     padding-top: 100px;
     float: left;
@@ -68,14 +67,18 @@ const Styles = styled.div`
     margin-top: -30px;
     margin-bottom: -30px;
     padding: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .abc1{
     height:300px;
     margin-bottom: 30px;
+    display: flex;
 }
 .abc2{
     height:560px;
     margin-bottom: 30px;
+    display: flex;
 }
 .abc3{
     height:300px;
@@ -105,35 +108,76 @@ const Styles = styled.div`
     top:0;
     bottom:0;
  }
- .rab{
+.rab{
     object-fit: cover;
      width: 210px;
      height: 300px;
-     padding:0;
-     margin: 0;
      padding-right: 30px;
  }
- .rab1{
-     width: 650px;
+.rab1{
      object-fit: cover;
-     height: 300px;
-     padding-right: 30px;
+     position: relative;
+     z-index: -2;
  }
- .rab2{
+.rab2{
      width: 220px;
      height: 300px;
  }
+ .blend{
+     width: 650px;
+     margin: 0px;
+     height: 300px;
+     margin-right: 30px;
+     position:relative;
+     z-index:-3;
+     background: url(${abcc}) bottom;
+     background-size: cover;
+     background-color: silver;
+ }
+ .blend-c{
+     background-color: rgb(28,28,28,0.4);
+     position:absolute;
+     z-index:-1;
+     text-align: center;
+     color: white;
+     bottom: 0;
+     height: 100px;
+ }
 .rabb{
-    object-fit: cover;
+    background: url(${aacc});
+    background-size: cover;
     width: 540px;
     height: 600px;
-    padding-right: 15px;
+    position: relative;
+    z-index: -2;
+    margin-right:15px;  
+}
+.rabb-c{
+    background-color: rgb(28,28,28,0.4);
+    position:absolute;
+    z-index:-1;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    height: 100px;
 }
 .rabbb{
-    object-fit: cover;
+    background: url(${aaccc});
+    background-size: cover;
     width: 540px;
     height: 600px;
-    padding-left: 15px;
+    position: relative;
+    z-index: -2;
+    margin-left: 15px;
+}
+.rabbb-c{
+    background-color: rgb(28,28,28,0.4);
+    position:absolute;
+    z-index:-1;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    height: 100px;
 }
 .pc{
     margin-top: 40px;
@@ -149,7 +193,19 @@ const Styles = styled.div`
     height: 300px;
     position: absolute;
     background-color: brown;
+    text-align: center;
+    padding-top: 80px;
 }
+
+//BC
+.biss{
+    height: 300px;
+    margin: 10px;
+    text-align: left;
+    padding-top: 10px;
+    background-color:rgb(28,28,28,0.4)
+}
+
 `;
 
 class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionState> {
@@ -161,25 +217,27 @@ class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionSta
                     <div className="divi">
                         <div className="ab">
                             <div className="overlay">
-                                <Container>
-                                    <p>Nutrition</p>
-                                    <p>jkcksdfhskcjsdnjdhsfckbdshv</p>
+                                <Container className="biss">
+                                    <p style={{ fontFamily: "Century Gothic", color: "yellow" }}>Have a Trust on what<br /> You are Consuming</p>
+                                    <p style={{ fontSize: "18px", color: "snow", fontFamily: "Century Gothic" }}>PS: Get the app to review the rating of food item served, order, <br /> invest and earn your divident</p>
+                                    <a style={{ backgroundColor: "green", color: "white", padding: "15px", fontSize: "25px", fontFamily: "Century Gothic" }} title="Learn more">Learn More</a>
                                 </Container>
                             </div>
                         </div>
 
-                        <Container className="abc">
+                        <div className="abc">
                             <div className="abc1">
                                 <img
                                     className="rab"
                                     src={abc}
                                     alt="Roll"
                                 />
-                                <img
-                                    className="rab1"
-                                    src={abcc}
-                                    alt="Roll"
-                                />
+                                <div className="blend">
+                                    <Container className="blend-c">
+                                        <pre style={{ color: "white", fontFamily: "Century Gothic", fontSize: "26px", fontWeight: "bold" }}>Uber Eat    Careem Now    Cheetay    Bykea</pre>
+                                        <a style={{ backgroundColor: "green", color: "white", padding: "10px", fontSize: "15px", fontFamily: "Century Gothic", fontWeight: "bold", marginRight: "10px" }}>Get Deliverd</a><span style={{ color: "white", fontFamily: "Century Gothic", fontSize: "15px", fontWeight: "bold" }}>OR</span><a style={{ backgroundColor: "green", color: "white", padding: "10px", fontSize: "15px", fontFamily: "Century Gothic", fontWeight: "bold", marginLeft: "10px" }}>Pickup Later</a>
+                                    </Container>
+                                </div>
                                 <img
                                     className="rab2"
                                     src={abccc}
@@ -187,20 +245,29 @@ class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionSta
                                 />
                             </div>
                             <div className="abc2">
-                                <img
-                                    className="rabb"
-                                    src={aacc}
-                                    alt="Roll"
-                                />
-                                <img
-                                    className="rabbb"
-                                    src={aaccc}
-                                    alt="Roll"
-                                />
+
+                                <div className="rabb">
+                                    <Container className="rabb-c">
+                                        <p style={{ color: "white", fontSize: "18px", fontFamily: "Century Gothic", fontWeight: "bold" }}>Pizza, Burger, Falafel, Taccoo and burretos</p>
+                                        <a style={{ backgroundColor: "green", color: "white", padding: "10px", fontSize: "18px", fontFamily: "Century Gothic", fontWeight: "bold" }}>Order Now</a>
+                                    </Container>
+                                </div>
+
+                                <div className="rabbb">
+                                    <Container className="rabbb-c">
+                                        <p style={{ color: "white", fontSize: "18px", fontFamily: "Century Gothic", fontWeight: "bold" }}>Coffee, Tea, smoothy and bear</p>
+                                        <a style={{ backgroundColor: "green", color: "white", padding: "10px", fontSize: "18px", fontFamily: "Century Gothic", fontWeight: "bold" }}>Order Now</a>
+                                    </Container>
+                                </div>
+
                             </div>
                             <div className="abc3">
                                 <div className="jumbo">
+                                    <Container>
+                                        <p style={{ color: "white", fontSize: "30px", fontFamily: "Century Gothic", fontWeight: "bold" }}>Our mission of sustainability and digital revolution in food industry</p>
+                                        <a style={{ backgroundColor: "green", color: "white", padding: "10px", fontSize: "18px", fontFamily: "Century Gothic", fontWeight: "bold" }}>Learn more</a>
 
+                                    </Container>
                                 </div>
                                 <img
                                     className="pc"
@@ -208,13 +275,14 @@ class FoodNutrition extends React.Component<FoodNutritionProps, FoodNutritionSta
                                     alt="Roll"
                                 />
                             </div>
-                        </Container>
+                        </div>
 
                         <div className="cd">
                             <div className="overlay1">
-                                <Container>
-                                    <p>Nutrition</p>
-                                    <p>jkcksdfhskcjsdnjdhsfckbdshv</p>
+                                <Container className="biss">
+                                    <p style={{ fontFamily: "Century Gothic" }}>INVEST & EARN <br /> while EATING</p>
+                                    <p style={{ fontSize: "18px", color: "snow", fontFamily: "Century Gothic" }}>PS: Get the app to review the rating of food item served, order, <br /> invest and earn your divident</p>
+                                    <a style={{ backgroundColor: "green", color: "white", padding: "15px", fontSize: "25px", fontFamily: "Century Gothic" }} title="Learn more">Learn More</a>
                                 </Container>
                             </div>
                         </div>

@@ -15,13 +15,45 @@ export interface SMediaState {
 const Styles = styled.div`
 
 .jumbo{
-    height: 400px;
-    background-color: silver;
+    height: 300px;
+    background-color: darkgrey;
     width: 100%;
     margin:0px;
 }
 .con{
     text-align:center;
+}
+#a{
+    font-size: 25px;
+    color: Black;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    line-spacing: 2px;
+}
+#b{
+    font-size: 25px;
+    color: Black;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    line-spacing: 2px;
+}
+#c{
+    font-size: 25px;
+    color: Black;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    line-spacing: 2px;
+}
+#d{
+    font-size: 30px;
+    color: darkgreen;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    line-spacing: 2px;
+}
+#bb{
+    font-size: 30px;
+    color: darkgreen;
 }
 
 `;
@@ -35,10 +67,10 @@ class SMedia extends React.Component<SMediaProps, SMediaState> {
                     <Jumbotron className="jumbo">
 
                         <Container className="con">
-                            <span>So Meal is fresh, healthy and delicious</span>
-                            <p>FIND US or let us to FIND YOU</p>
-                            <span>Or you can be hustle free by becoming our</span>
-                            <p>Hero</p>
+                            <span id="a">So Meal is Fresh, Healthy and Delicious</span>
+                            <p id="b"><u id="bb">FIND US</u> or let us to<u id="bb"> FIND YOU</u></p>
+                            <span id="c">P.S You can be Hustle-free by becoming our</span>
+                            <p id="d"><u>Hero</u></p>
                         </Container>
 
                     </Jumbotron>

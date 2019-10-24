@@ -24,8 +24,7 @@ const App: React.FC = () => {
       <React.Fragment>
         <Navigate />
         <Car />
-        <div className="div1"></div>
-        {/* <ServiceLay /> */}
+        {/* <div className="div1"></div> */}
         <FoodNutrition />
         <Culture />
         <SMedia />
